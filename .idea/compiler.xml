@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <resourceExtensions />
+    <wildcardResourcePatterns>
+      <entry name="!?*.java" />
+      <entry name="!?*.form" />
+      <entry name="!?*.class" />
+      <entry name="!?*.groovy" />
+      <entry name="!?*.scala" />
+      <entry name="!?*.flex" />
+      <entry name="!?*.kt" />
+      <entry name="!?*.clj" />
+      <entry name="!?*.aj" />
+    </wildcardResourcePatterns>
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="false">
+        <processorPath useClasspath="true" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="Client_main" target="1.8" />
+      <module name="Client_test" target="1.8" />
+      <module name="Domain_main" target="1.8" />
+      <module name="Domain_test" target="1.8" />
+      <module name="Exceptions_main" target="1.8" />
+      <module name="Exceptions_test" target="1.8" />
+      <module name="Networking_main" target="1.8" />
+      <module name="Networking_test" target="1.8" />
+      <module name="Proiect_main" target="1.8" />
+      <module name="Proiect_test" target="1.8" />
+      <module name="Repository_main" target="1.8" />
+      <module name="Repository_test" target="1.8" />
+      <module name="Server_main" target="1.8" />
+      <module name="Server_test" target="1.8" />
+      <module name="Service_main" target="1.8" />
+      <module name="Service_test" target="1.8" />
+      <module name="Validator_main" target="1.8" />
+      <module name="Validator_test" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

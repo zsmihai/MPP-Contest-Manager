@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Client/Client.iml" filepath="$PROJECT_DIR$/.idea/modules/Client/Client.iml" group="Client" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Client/Client_main.iml" filepath="$PROJECT_DIR$/.idea/modules/Client/Client_main.iml" group="Client" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Client/Client_test.iml" filepath="$PROJECT_DIR$/.idea/modules/Client/Client_test.iml" group="Client" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Domain/Domain.iml" filepath="$PROJECT_DIR$/.idea/modules/Domain/Domain.iml" group="Domain" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Domain/Domain_main.iml" filepath="$PROJECT_DIR$/.idea/modules/Domain/Domain_main.iml" group="Domain" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Domain/Domain_test.iml" filepath="$PROJECT_DIR$/.idea/modules/Domain/Domain_test.iml" group="Domain" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Exceptions/Exceptions.iml" filepath="$PROJECT_DIR$/.idea/modules/Exceptions/Exceptions.iml" group="Exceptions" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Exceptions/Exceptions_main.iml" filepath="$PROJECT_DIR$/.idea/modules/Exceptions/Exceptions_main.iml" group="Exceptions" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Exceptions/Exceptions_test.iml" filepath="$PROJECT_DIR$/.idea/modules/Exceptions/Exceptions_test.iml" group="Exceptions" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Networking/Networking.iml" filepath="$PROJECT_DIR$/.idea/modules/Networking/Networking.iml" group="Networking" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Networking/Networking_main.iml" filepath="$PROJECT_DIR$/.idea/modules/Networking/Networking_main.iml" group="Networking" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Networking/Networking_test.iml" filepath="$PROJECT_DIR$/.idea/modules/Networking/Networking_test.iml" group="Networking" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Proiect.iml" filepath="$PROJECT_DIR$/.idea/modules/Proiect.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Proiect_main.iml" filepath="$PROJECT_DIR$/.idea/modules/Proiect_main.iml" group="Proiect" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Proiect_test.iml" filepath="$PROJECT_DIR$/.idea/modules/Proiect_test.iml" group="Proiect" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Repository/Repository.iml" filepath="$PROJECT_DIR$/.idea/modules/Repository/Repository.iml" group="Repository" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Repository/Repository_main.iml" filepath="$PROJECT_DIR$/.idea/modules/Repository/Repository_main.iml" group="Repository" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Repository/Repository_test.iml" filepath="$PROJECT_DIR$/.idea/modules/Repository/Repository_test.iml" group="Repository" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Server/Server.iml" filepath="$PROJECT_DIR$/.idea/modules/Server/Server.iml" group="Server" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Server/Server_main.iml" filepath="$PROJECT_DIR$/.idea/modules/Server/Server_main.iml" group="Server" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Server/Server_test.iml" filepath="$PROJECT_DIR$/.idea/modules/Server/Server_test.iml" group="Server" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Service/Service.iml" filepath="$PROJECT_DIR$/.idea/modules/Service/Service.iml" group="Service" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Service/Service_main.iml" filepath="$PROJECT_DIR$/.idea/modules/Service/Service_main.iml" group="Service" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Service/Service_test.iml" filepath="$PROJECT_DIR$/.idea/modules/Service/Service_test.iml" group="Service" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Validator/Validator.iml" filepath="$PROJECT_DIR$/.idea/modules/Validator/Validator.iml" group="Validator" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Validator/Validator_main.iml" filepath="$PROJECT_DIR$/.idea/modules/Validator/Validator_main.iml" group="Validator" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Validator/Validator_test.iml" filepath="$PROJECT_DIR$/.idea/modules/Validator/Validator_test.iml" group="Validator" />
+    </modules>
+  </component>
+</project>
