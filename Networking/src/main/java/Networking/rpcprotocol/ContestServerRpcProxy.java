@@ -206,17 +206,7 @@ public class ContestServerRpcProxy implements IServer{
         tw.start();
     }
 
-    private class InvalidateThread implements Runnable{
 
-        @Override
-        public void run() {
-            try {
-                client.invalidate();
-            } catch (ServiceException e) {
-                e.printStackTrace();
-            }
-        }
-    }
 
     private class ReaderThread implements Runnable{
 
@@ -231,18 +221,20 @@ public class ContestServerRpcProxy implements IServer{
                     try{
 
                         if(((Response) response).getType()==ResponseType.INVALIDATE){
-                               Thread it = new Thread(new InvalidateThread());
-                                it.start();
+                            client.invalidate();
+
                         }
                         else
                             responsesQueue.put((Response) response);
 
                     } catch (InterruptedException e) {
                         e.printStackTrace();
+                    } catch (ServiceException e) {
+                        e.printStackTrace();
                     }
 
                 } catch (IOException | ClassNotFoundException ex){
-                    System.out.println("Client reader stopped");
+                    System.out.println("Client reader stopped with "+ex.getMessage());
                     finished = true;
                 }
             }

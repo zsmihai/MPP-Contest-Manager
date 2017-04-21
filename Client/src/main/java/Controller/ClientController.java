@@ -21,6 +21,8 @@ public class ClientController implements IClient , Observable {
         private IServer server;
     private User user;
 
+    private volatile boolean invalidated=false;
+
     public ClientController(IServer server) {
         this.server = server;
         observerList=new ArrayList<Observer>();
@@ -69,11 +71,16 @@ public class ClientController implements IClient , Observable {
     }
 
 
-
+    public void invalidated_update(){
+        if(invalidated){
+            invalidated=false;
+            notifyObservers();
+        }
+    }
 
     @Override
     public void invalidate() throws ServiceException {
-        notifyObservers();
+        invalidated=true;
     }
 
 

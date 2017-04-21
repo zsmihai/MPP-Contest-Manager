@@ -5,16 +5,22 @@ import Domain.CategorieVarsta;
 import Domain.Inscriere;
 import Domain.Proba;
 import Utils.Observer;
+import javafx.animation.KeyFrame;
+import javafx.animation.Timeline;
+import javafx.animation.TimelineBuilder;
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
 import javafx.collections.FXCollections;
 import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.stage.Stage;
 
 import Exceptions.ServiceException;
+import javafx.util.Duration;
+
 public class ConcursController implements Observer{
 
     private ClientController clientController;
@@ -35,6 +41,24 @@ public class ConcursController implements Observer{
         this.thisStage = concursStage;
         this.clientController=clientController;
         clientController.addObserver(this);
+
+
+        Timeline tick = TimelineBuilder.create()//creates a new Timeline
+                .keyFrames(
+                        new KeyFrame(
+                                new Duration(30),//This is how often it updates in milliseconds
+                                new EventHandler<ActionEvent>() {
+                                    public void handle(ActionEvent t) {
+                                        clientController.invalidated_update();
+                                    }
+                                }
+                        )
+                )
+                .cycleCount(Timeline.INDEFINITE)
+                .build();
+
+
+
         this.probeTableView.setItems(FXCollections.observableArrayList(clientController.getAllProbe()));
         probaNumeTableColumn.setCellValueFactory(new PropertyValueFactory<Proba, String>("nume"));
 
@@ -109,6 +133,7 @@ public class ConcursController implements Observer{
                 }
             }
         });
+        tick.play();
     }
 
     @FXML
@@ -194,7 +219,7 @@ public class ConcursController implements Observer{
     void participantAdaugaButtonHandler(ActionEvent event) {
         try {
             clientController.addInscriere(probeTableView.getSelectionModel().getSelectedItem(), participantNumeTextBox.getText(), Integer.valueOf(participantVarstaTextBox.getText()));
-            updateT();
+
         }
         catch (NumberFormatException e) {
             Alert alert = new Alert(Alert.AlertType.ERROR);

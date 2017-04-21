@@ -97,7 +97,7 @@ public class ContestServer implements IServer {
         }
     }
 
-    private void notifyClients() throws ServiceException {
+    private synchronized void notifyClients() throws ServiceException {
 
         Iterable<String> loggedUsers = loggedClients.keySet();
 

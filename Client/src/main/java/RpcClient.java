@@ -17,7 +17,7 @@ import java.util.Properties;
  * Created by Utilizator on 11-Apr-17.
  */
 public class RpcClient extends Application{
-    private static int defaultPort = 55555;
+    private static int defaultPort = 55556;
 
      private static String defaultServer = "localhost";
 

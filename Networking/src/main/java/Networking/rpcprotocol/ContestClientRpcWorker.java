@@ -55,7 +55,7 @@ public class ContestClientRpcWorker implements Runnable, IClient {
             //read request
             try {
                 Object request = inputStream.readObject();
-                System.out.println("Received a request!");
+                System.out.println("Received a request!" + ((Request)request).getType());
 
                 Response response = handleRequest((Request) request);
                 System.out.println("Processed request!");
